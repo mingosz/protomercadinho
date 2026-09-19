@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadinho Protótipo Acessibilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a class="skip-to-content-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho-principal">
+     <div class="container">
+            <ul class="barra-acessibilidade">
+                <li>
+                    <button id="btn-contraste" class="btn-acessibilidade" aria-pressed="false" aria-label="Alternar Alto Contraste">
+                        <span class="icone-acessibilidade">◐</span>
+                    </button>
+                </li>
+                <li>
+                    <button id="btn-fonte" class="btn-acessibilidade" aria-pressed="false" aria-label="Aumentar tamanho da fonte">
+                        <span class="icone-acessibilidade">A+</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+    <div id="accessibility-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+        <div class="container cabecalho-grid">
+            
+            <h1 class="logo-texto">
+                <a href="#">Mercadinho Protótipo</a>
+            </h1>
+            
+            <nav aria-label="Navegação principal">
+                <ul class="menu-lista">
+                    <li><a href="#contato" class="menu-link">Fale Conosco</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="container">
+        
+        <section aria-labelledby="titulo-produtos" class="secao-espacamento">
+            <h2 id="titulo-produtos" class="titulo-secao">Produtos Disponíveis</h2>
+            
+            <div class="product-grid">
+                <article class="resource-card">
+                    <div class="resource-card__media">
+                            <img src="images/pao.png" 
+                                alt="Ilustração de um Pão" 
+                             class="imagem-quadrada" loading="lazy">
+                    </div>
+                    <div class="resource-card__content">
+                        <h3 class="produto-titulo">Pão Francês</h3>
+                        <p class="produto-descricao">Pães fresquinhos, feitos diariamente.</p>
+                        <span class="price">R$ 14,90 / kg</span>
+                        <button class="button info-button" type="button" data-title="Pão Francês Fresco" data-detail="Pão francês básico, 16 horas de fermentação. Fornadas quentes todos os dias às 6h e 16h." data-price="R$ 14,90 / kg" data-image="images/pao.png">Mais informações</button>
+                        <a class="button whatsapp-link" href="https://wa.me/5585999999999?text=Olá%2C%20quero%20pedir%20um%20P%C3%A3o%20Franc%C3%AAs%20Fresco." target="_blank" rel="noopener noreferrer">Pedir pelo WhatsApp</a>
+                    </div>
+                </article>
+
+                <article class="resource-card">
+                    <div class="resource-card__media">
+                            <img src="images/tomat.png" 
+                                alt="Ilustração de um tomate vermelho maduro com folhas verdes" 
+                             class="imagem-quadrada" loading="lazy">
+                    </div>
+                    <div class="resource-card__content">
+                        <h3 class="produto-titulo">Tomates frescos</h3>
+                        <p class="produto-descricao">Tomates frescos, cultivados localmente.</p>
+                        <span class="price">R$ 25,00 / kg</span>
+                        <button class="button info-button" type="button" data-title="Tomates frescos" data-detail="Tomates. Simplesmente uma das melhores coisas que o ser humano pode desfrutar." data-price="R$ 25,00 / kg" data-image="images/tomat.png">Mais informações</button>
+                        <a class="button whatsapp-link" href="https://wa.me/5585999999999?text=Olá%2C%20quero%20pedir%20os%20tomates%20frescos." target="_blank" rel="noopener noreferrer">Pedir pelo WhatsApp</a>
+                    </div>
+                </article>
+
+                <article class="resource-card">
+                    <div class="resource-card__media">
+                        <img src="images/qjo.png" 
+                             alt="Ilustração de um queijo" 
+                             class="imagem-quadrada" loading="lazy">
+                    </div>
+                    <div class="resource-card__content">
+                        <h3 class="produto-titulo">Queijo Coalho Regional</h3>
+                        <p class="produto-descricao">Queijo produzido no interior do Ceará.</p>
+                        <span class="price">R$ 38,00 / kg</span>
+                        <button class="button info-button" type="button" data-title="Queijo Coalho Regional" data-detail="Queijo coalho macio, salgadinho e muito saboroso. Diretamente do nosso interior." data-price="R$ 38,00 / kg" data-image="images/qjo.png">Mais informações</button>
+                        <a class="button whatsapp-link" href="https://wa.me/5585999999999?text=Olá%2C%20quero%20pedir%20o%20Queijo%20Coalho%20Regional." target="_blank" rel="noopener noreferrer">Pedir pelo WhatsApp</a>
+                    </div>
+                </article>
+
+                <article class="resource-card">
+                    <div class="resource-card__media">
+                            <img src="images/orang.png" 
+                                alt="Ilustração de uma garrafa de suco de laranja" 
+                             class="imagem-quadrada" loading="lazy">
+                    </div>
+                    <div class="resource-card__content">
+                        <h3 class="produto-titulo">Suco de Laranja Integral</h3>
+                        <p class="produto-descricao">Suco de laranja feito na hora.</p>
+                        <span class="price">R$ 8,00 / Litro </span>
+                        <button class="button info-button" type="button" data-title="Suco de Laranja Integral" data-detail="Suquinho de laranja feito na hora, quem não gosta? Açúcar opcional." data-price="R$ 8,00 / Litro " data-image="images/orang.png">Mais informações</button>
+                        <a class="button whatsapp-link" href="https://wa.me/5585999999999?text=Olá%2C%20quero%20pedir%20um%20Suco%20de%20Laranja%20Integral." target="_blank" rel="noopener noreferrer">Pedir pelo WhatsApp</a>
+                    </div>
+                </article>
+
+                <article class="resource-card">
+                    <div class="resource-card__media">
+                            <img src="images/leit.png" 
+                                alt="Ilustração de uma caixa de leite" 
+                             class="imagem-quadrada" loading="lazy">
+                    </div>
+                    <div class="resource-card__content">
+                        <h3 class="produto-titulo">Caixa de Leite</h3>
+                        <p class="produto-descricao">Caixa de leite UHT integral. </p>
+                        <span class="price">R$ 5,00 / unidade</span>
+                        <button class="button info-button" type="button" data-title="Caixa de Leite" data-detail="Caixa de leite UHT integral. " data-price="R$ 5,00 / unidade" data-image="images/leit.png">Mais informações</button>
+                        <a class="button whatsapp-link" href="https://wa.me/5585999999999?text=Olá%2C%20quero%20pedir%20uma%20Caixa%20de%20Leite." target="_blank" rel="noopener noreferrer">Pedir pelo WhatsApp</a>
+                    </div>
+                </article>
+
+                <article class="resource-card">
+                    <div class="resource-card__media">
+                            <img src="images/choc.png" 
+                                alt="Ilustração de uma barra de chocolate ao leite" 
+                             class="imagem-quadrada" loading="lazy">
+                    </div>
+                    <div class="resource-card__content">
+                        <h3 class="produto-titulo">Barra de chocolate</h3>
+                        <p class="produto-descricao">Barra de chocolate ao leite. </p>
+                        <span class="price">R$ 7,00 / unidade</span>
+                        <button class="button info-button" type="button" data-title="Barra de chocolate" data-detail="Barra de chocolate ao leite. Esse é chocoalte de verdade." data-price="R$ 7,00 / unidade" data-image="images/choc.png">Mais informações</button>
+                        <a class="button whatsapp-link" href="https://wa.me/5585999999999?text=Olá%2C%20quero%20pedir%20uma%20Barra%20de%20chocolate." target="_blank" rel="noopener noreferrer">Pedir pelo WhatsApp</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <div class="modal-backdrop" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true" hidden>
+            <div class="modal">
+                <button class="modal-close" type="button" aria-label="Fechar modal">×</button>
+                <div class="modal-content">
+                    <div class="modal-image">
+                        <img id="modal-image" src="" alt="Imagem do produto" />
+                    </div>
+                    <div class="modal-body">
+                        <h3 id="modal-title">Detalhes do produto</h3>
+                        <p id="modal-description">Informações do produto.</p>
+                        <p class="modal-price" id="modal-price"></p>
+                        <a id="modal-whatsapp" class="button modal-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer">Pedir pelo WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <a href="#" id="voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo da página">↑</a>
+
+    <footer id="contato" class="rodape-principal">
+        <div class="container rodape-flex">
+            <div class="rodape-esquerda">
+                <h2 class="titulo-secao rodape-titulo">Fale Conosco</h2>
+            </div>
+            <div class="rodape-direita">
+                <p class="paragrafo-grande">Rua Principal, 123 - Fortaleza, CE.</p>
+                <p class="paragrafo-grande">Telefone / WhatsApp: <a class="link-telefone" href="tel:+5585999999999">(85) 99999-9999</a></p>
+                <p class="rodape-creditos">&copy; 2026 Mercadinho Protótipo. Site Acessível.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btnContraste = document.getElementById('btn-contraste');
+        const btnFonte = document.getElementById('btn-fonte');
+        const btnTopo = document.getElementById('voltar-topo');
+        const footer = document.getElementById('contato');
+        const accessibilityStatus = document.getElementById('accessibility-status');
+        const contrastStorageKey = 'mercadinho-alto-contraste';
+        const fontStorageKey = 'mercadinho-fonte-ampliada';
+
+        function readPreference(key) {
+            try {
+                return localStorage.getItem(key) === 'true';
+            } catch (error) {
+                return false;
+            }
+        }
+
+        function savePreference(key, value) {
+            try {
+                localStorage.setItem(key, String(value));
+            } catch (error) {
+                return;
+            }
+        }
+
+        function announce(message) {
+            accessibilityStatus.textContent = message;
+        }
+
+        const contrastEnabled = readPreference(contrastStorageKey);
+        const fontEnabled = readPreference(fontStorageKey);
+        document.body.classList.toggle('alto-contraste', contrastEnabled);
+        document.documentElement.classList.toggle('fonte-ampliada', fontEnabled);
+        btnContraste.setAttribute('aria-pressed', contrastEnabled);
+        btnFonte.setAttribute('aria-pressed', fontEnabled);
+        btnFonte.setAttribute(
+            'aria-label',
+            fontEnabled ? 'Restaurar tamanho da fonte' : 'Aumentar tamanho da fonte'
+        );
+
+        btnContraste.addEventListener('click', () => {
+            document.body.classList.toggle('alto-contraste');
+            const isAltoContraste = document.body.classList.contains('alto-contraste');
+            btnContraste.setAttribute('aria-pressed', isAltoContraste);
+            savePreference(contrastStorageKey, isAltoContraste);
+            announce(isAltoContraste ? 'Alto contraste ativado.' : 'Alto contraste desativado.');
+        });
+
+        btnFonte.addEventListener('click', () => {
+            document.documentElement.classList.toggle('fonte-ampliada');
+            const isFonteMaior = document.documentElement.classList.contains('fonte-ampliada');
+            btnFonte.setAttribute('aria-pressed', isFonteMaior);
+            btnFonte.setAttribute(
+                'aria-label',
+                isFonteMaior ? 'Restaurar tamanho da fonte' : 'Aumentar tamanho da fonte'
+            );
+            savePreference(fontStorageKey, isFonteMaior);
+            announce(isFonteMaior ? 'Fonte ampliada.' : 'Tamanho da fonte restaurado.');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (!btnTopo || !footer) return;
+            const scrollTop = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+            const footerHeight = footer.offsetHeight;
+
+            if (scrollTop > 300) {
+                btnTopo.classList.add('visivel');
+            } else {
+                btnTopo.classList.remove('visivel');
+            }
+
+            if ((scrollTop + windowHeight) >= (docHeight - footerHeight)) {
+                const deslocamento = (scrollTop + windowHeight) - (docHeight - footerHeight);
+                btnTopo.style.bottom = `${deslocamento + 20}px`;
+            } else {
+                btnTopo.style.bottom = '20px';
+            }
+        });
+
+        const modalBackdrop = document.getElementById('product-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalPrice = document.getElementById('modal-price');
+        const modalImage = document.getElementById('modal-image');
+        const modalWhatsapp = document.getElementById('modal-whatsapp');
+        const modalClose = modalBackdrop.querySelector('.modal-close');
+        const infoButtons = document.querySelectorAll('.info-button');
+        const focusableSelectors = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+        const modalBackgroundElements = [
+            document.querySelector('.cabecalho-principal'),
+            ...Array.from(document.querySelectorAll('main > *')).filter(
+                (element) => element !== modalBackdrop
+            ),
+            btnTopo,
+            footer
+        ].filter(Boolean);
+        let lastFocusedElement = null;
+
+        function setBackgroundInert(isInert) {
+            modalBackgroundElements.forEach((element) => {
+                element.inert = isInert;
+                if (isInert) {
+                    element.setAttribute('aria-hidden', 'true');
+                } else {
+                    element.removeAttribute('aria-hidden');
+                }
+            });
+        }
+
+        function getFocusableElements() {
+            return Array.from(modalBackdrop.querySelectorAll(focusableSelectors)).filter(
+                (element) => !element.hasAttribute('hidden')
+            );
+        }
+
+        function openModal(button) {
+            lastFocusedElement = button;
+            const title = button.dataset.title;
+            const detail = button.dataset.detail;
+            const price = button.dataset.price;
+            const image = button.dataset.image;
+            const whatsappLink = button.closest('.resource-card').querySelector('.whatsapp-link');
+
+            modalTitle.textContent = title;
+            modalDescription.textContent = detail;
+            modalPrice.textContent = price;
+            modalImage.src = image || '';
+            modalImage.alt = title || 'Imagem do produto';
+            modalWhatsapp.href = whatsappLink.href;
+
+            modalBackdrop.hidden = false;
+            modalBackdrop.classList.add('active');
+            modalBackdrop.setAttribute('aria-hidden', 'false');
+            setBackgroundInert(true);
+            modalClose.focus();
+        }
+
+        function closeModal() {
+            setBackgroundInert(false);
+            modalBackdrop.hidden = true;
+            modalBackdrop.classList.remove('active');
+            modalBackdrop.setAttribute('aria-hidden', 'true');
+            if (lastFocusedElement) {
+                lastFocusedElement.focus();
+            }
+        }
+
+        infoButtons.forEach((button) => {
+            button.addEventListener('click', () => openModal(button));
+        });
+
+        modalClose.addEventListener('click', closeModal);
+
+        modalBackdrop.addEventListener('click', (event) => {
+            if (event.target === modalBackdrop) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (modalBackdrop.hidden) {
+                return;
+            }
+
+            if (event.key === 'Escape') {
+                closeModal();
+                return;
+            }
+
+            if (event.key === 'Tab') {
+                const focusableElements = getFocusableElements();
+                if (focusableElements.length === 0) {
+                    event.preventDefault();
+                    return;
+                }
+
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (event.shiftKey && document.activeElement === firstElement) {
+                    event.preventDefault();
+                    lastElement.focus();
+                } else if (!event.shiftKey && document.activeElement === lastElement) {
+                    event.preventDefault();
+                    firstElement.focus();
+                }
+            }
+        });
+
+        document.addEventListener('focusin', (event) => {
+            if (!modalBackdrop.hidden && !modalBackdrop.contains(event.target)) {
+                modalClose.focus();
+            }
+        });
+    </script>
+</body>
+</html>
